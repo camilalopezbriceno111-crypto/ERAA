@@ -1,713 +1,192 @@
-/* =========================
-   GENERAL
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    color: #222222;
-    line-height: 1.6;
-}
-
-img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    width: 100%;
-    min-height: 75px;
-    background-color: #111111;
-    color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 6%;
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.logo span {
-    font-weight: normal;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
-
-nav a {
-    color: white;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-    position: relative;
-    padding: 8px 0;
-
-    transition: 0.3s;
-}
-
-nav a::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    width: 0;
-    height: 2px;
-
-    background-color: white;
-
-    transition: 0.3s;
-}
-
-nav a:hover {
-    opacity: 0.7;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-    min-height: 650px;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.55)
-        ),
-        url("campus.jpg");
-
-    background-size: cover;
-    background-position: center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Roble Academy | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+<body>
 
-    text-align: center;
-    color: white;
-}
+<header>
+    <a href="index.html" class="logo">
+        EL ROBLE
+        <span>ACADEMY</span>
+    </a>
 
-.hero-content {
-    max-width: 850px;
-    padding: 30px;
-}
+    <nav>
+        <a href="index.html" target="_blank" rel="noopener noreferrer">HOME</a>
+        <a href="about.html" target="_blank" rel="noopener noreferrer">ABOUT US</a>
+        <a href="history.html" target="_blank" rel="noopener noreferrer">HISTORY</a>
+        <a href="achievements.html" target="_blank" rel="noopener noreferrer">ACHIEVEMENTS</a>
+        <a href="campus.html" target="_blank" rel="noopener noreferrer">CAMPUS</a>
 
-.hero h1 {
-    font-size: clamp(45px, 8vw, 90px);
-    letter-spacing: 5px;
-    margin-bottom: 20px;
-}
+        <!-- CONTACT CORREGIDO -->
+        <a href="./contact.html" target="_blank" rel="noopener noreferrer">
+            CONTACT
+        </a>
+    </nav>
+</header>
 
-.hero p {
-    font-size: 21px;
-    margin-bottom: 35px;
-}
 
-/* =========================
-   BUTTONS
-========================= */
+<section class="page-header">
+    <p class="section-label light">GET IN TOUCH</p>
+    <h1>CONTACT</h1>
+</section>
 
-.btn {
-    display: inline-block;
 
-    background-color: #111111;
-    color: white;
+<section class="contact-section">
 
-    border: none;
+    <div class="contact-info">
 
-    padding: 14px 30px;
+        <p class="section-label">CONTACT US</p>
 
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 1px;
+        <h2>Let's stay<br><span>connected.</span></h2>
 
-    cursor: pointer;
+        <p>
+            We are always happy to connect with members
+            of our educational community.
+        </p>
 
-    transition: 0.3s;
-}
 
-.hero .btn {
-    background-color: white;
-    color: #111111;
-}
+        <div class="contact-detail">
 
-.btn:hover {
-    transform: translateY(-3px);
-    opacity: 0.8;
-}
+            <span>LOCATION</span>
 
-/* =========================
-   SECTIONS
-========================= */
+            <p>
+                Comayagüela, Tegucigalpa, Honduras
+            </p>
 
-.section {
-    padding: 90px 7%;
-}
+            <p>
+                <strong>Plus Code:</strong> 2QHH+89X
+            </p>
 
-.gray {
-    background-color: #f3f3f3;
-}
+        </div>
 
-.section-title {
-    text-align: center;
-    margin-bottom: 55px;
-}
 
-.section-title h2 {
-    font-size: 36px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
+        <div class="contact-detail">
 
-.section-title p {
-    color: #666666;
-}
+            <span>PHONE</span>
 
-/* =========================
-   CARDS
-========================= */
+            <p>
+                +504 2229-7070
+            </p>
 
-.cards {
-    display: grid;
+        </div>
 
-    grid-template-columns:
-        repeat(3, 1fr);
 
-    gap: 30px;
-}
+        <div class="contact-detail">
 
-.card {
-    background-color: white;
+            <span>SOCIAL MEDIA</span>
 
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.08);
+            <div class="contact-socials">
 
-    overflow: hidden;
+                <a href="https://www.instagram.com/elrobleacademy?igsi=MXN0MHp5c29xYmVuYg%3D%3D"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    INSTAGRAM
+                </a>
 
-    transition: 0.3s;
-}
+                <a href="https://www.facebook.com/p/El-Roble-100045855324234/?locale=es_LA"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    FACEBOOK
+                </a>
 
-.card:hover {
-    transform: translateY(-8px);
-}
+            </div>
 
-.card img {
-    height: 250px;
-}
+        </div>
 
-.card-content {
-    padding: 28px;
-}
 
-.card-content h3 {
-    font-size: 21px;
-    margin-bottom: 12px;
-    letter-spacing: 1px;
-}
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=El+Roble+Academy+Comayaguela+Honduras"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="green-btn"
+        >
+            VIEW ON GOOGLE MAPS
+        </a>
 
-.card-content p {
-    color: #666666;
-}
+    </div>
 
-/* =========================
-   BANNER
-========================= */
 
-.banner {
-    min-height: 400px;
+    <div class="contact-form">
 
-    background-size: cover;
-    background-position: center;
+        <p class="section-label">SEND A MESSAGE</p>
 
-    background-attachment: fixed;
+        <h2>We'd love to<br><span>hear from you.</span></h2>
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        <form>
 
-    text-align: center;
+            <label for="name">NAME</label>
 
-    color: white;
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+            >
 
-    position: relative;
-}
 
-.banner::before {
-    content: "";
+            <label for="email">EMAIL</label>
 
-    position: absolute;
-    inset: 0;
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+            >
 
-    background-color: rgba(0, 0, 0, 0.55);
-}
 
-.banner div {
-    position: relative;
-    z-index: 2;
+            <label for="message">MESSAGE</label>
 
-    padding: 30px;
-}
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message..."
+            ></textarea>
 
-.banner h2 {
-    font-size: 42px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-}
 
-/* =========================
-   PAGE HERO
-========================= */
+            <button type="submit" class="green-btn">
+                SEND MESSAGE
+            </button>
 
-.page-hero {
-    min-height: 330px;
+        </form>
 
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)
-        ),
-        url("campus.jpg");
+    </div>
 
-    background-size: cover;
-    background-position: center;
+</section>
 
-    color: white;
 
-    display: flex;
-    flex-direction: column;
+<footer>
 
-    justify-content: center;
-    align-items: center;
+    <div class="footer-logo">
+        EL ROBLE <span>ACADEMY</span>
+    </div>
 
-    text-align: center;
-}
+    <p>Comayagüela, Honduras</p>
 
-.page-hero h1 {
-    font-size: 55px;
-    letter-spacing: 4px;
-}
+    <div class="socials">
 
-.page-hero p {
-    font-size: 18px;
-    margin-top: 10px;
-}
+        <a href="https://www.instagram.com/elrobleacademy?igsi=MXN0MHp5c29xYmVuYg%3D%3D"
+           target="_blank" rel="noopener noreferrer">
+            INSTAGRAM
+        </a>
 
-/* =========================
-   TWO COLUMNS
-========================= */
+        <a href="https://www.facebook.com/p/El-Roble-100045855324234/?locale=es_LA"
+           target="_blank" rel="noopener noreferrer">
+            FACEBOOK
+        </a>
 
-.two-column {
-    display: grid;
+    </div>
 
-    grid-template-columns:
-        1fr 1fr;
+    <p class="copyright">
+        © 2026 El Roble Academy. All rights reserved.
+    </p>
 
-    gap: 60px;
+</footer>
 
-    align-items: center;
-}
-
-.two-column img {
-    height: 430px;
-}
-
-.two-column h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-.two-column p {
-    color: #555555;
-    margin-bottom: 18px;
-}
-
-/* =========================
-   VALUES
-========================= */
-
-.values {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 25px;
-}
-
-.value {
-    background-color: white;
-
-    padding: 35px 25px;
-
-    text-align: center;
-
-    border-top: 4px solid #111111;
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.06);
-}
-
-.value h3 {
-    margin-bottom: 15px;
-    font-size: 19px;
-}
-
-.value p {
-    color: #666666;
-    font-size: 15px;
-}
-
-/* =========================
-   TIMELINE
-========================= */
-
-.timeline {
-    max-width: 900px;
-    margin: auto;
-}
-
-.timeline-item {
-    display: grid;
-
-    grid-template-columns:
-        80px 1fr;
-
-    gap: 30px;
-
-    padding: 30px 0;
-
-    border-bottom: 1px solid #cccccc;
-}
-
-.timeline-number {
-    width: 60px;
-    height: 60px;
-
-    background-color: #111111;
-    color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: bold;
-}
-
-.timeline-item h3 {
-    margin-bottom: 8px;
-    font-size: 21px;
-}
-
-.timeline-item p {
-    color: #666666;
-}
-
-/* =========================
-   CAMPUS
-========================= */
-
-.campus-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap: 30px;
-}
-
-.campus-item {
-    background-color: white;
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.08);
-
-    overflow: hidden;
-}
-
-.campus-item img {
-    height: 300px;
-}
-
-.campus-item div {
-    padding: 25px;
-}
-
-.campus-item h3 {
-    margin-bottom: 10px;
-    font-size: 21px;
-}
-
-.campus-item p {
-    color: #666666;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact-container {
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap: 60px;
-}
-
-.contact-info h2,
-.contact-form h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-}
-
-.contact-box {
-    margin-bottom: 28px;
-}
-
-.contact-box h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
-}
-
-.contact-box p {
-    color: #666666;
-}
-
-.social-buttons {
-    display: flex;
-    gap: 12px;
-    margin-top: 15px;
-}
-
-.social-buttons a {
-    background-color: #111111;
-    color: white;
-
-    padding: 10px 18px;
-
-    font-size: 12px;
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.social-buttons a:hover {
-    opacity: 0.7;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    margin-bottom: 7px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-
-    padding: 14px;
-
-    border: 1px solid #cccccc;
-
-    margin-bottom: 20px;
-
-    font-family: inherit;
-    font-size: 15px;
-
-    outline: none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #111111;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form button {
-    align-self: flex-start;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background-color: #111111;
-    color: white;
-
-    text-align: center;
-
-    padding: 50px 20px;
-}
-
-footer h3 {
-    font-size: 23px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-footer p {
-    color: #bbbbbb;
-}
-
-.socials {
-    display: flex;
-    justify-content: center;
-
-    gap: 25px;
-
-    margin: 25px 0;
-}
-
-.socials a {
-    color: white;
-
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.socials a:hover {
-    opacity: 0.6;
-}
-
-.copyright {
-    font-size: 12px;
-    margin-top: 20px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .values {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .two-column {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-
-    .campus-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .hero {
-        min-height: 550px;
-    }
-
-    .hero h1 {
-        font-size: 45px;
-    }
-
-    .hero p {
-        font-size: 17px;
-    }
-
-    .page-hero h1 {
-        font-size: 40px;
-    }
-
-    .section {
-        padding: 65px 5%;
-    }
-
-    .section-title h2 {
-        font-size: 28px;
-    }
-
-    .values {
-        grid-template-columns: 1fr;
-    }
-
-    .timeline-item {
-        grid-template-columns: 60px 1fr;
-        gap: 20px;
-    }
-
-    .banner h2 {
-        font-size: 30px;
-    }
-
-    .social-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
+</body>
+</html>
