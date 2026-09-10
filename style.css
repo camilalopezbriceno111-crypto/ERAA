@@ -1137,3 +1137,93 @@ footer > p {
     }
 
 }
+
+/* =========================================
+   VIDEO SECTION
+========================================= */
+
+.video-section {
+    padding: 110px 7%;
+
+    background: white;
+}
+
+.video-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.75fr 1.25fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.video-text h2 {
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+
+.video-text h2 span {
+    color: var(--green);
+}
+
+.video-text > p:not(.section-label) {
+    color: var(--gray);
+
+    max-width: 430px;
+
+    line-height: 1.8;
+}
+
+.video-box {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #000;
+
+    box-shadow:
+        0 20px 50px rgba(20, 50, 30, 0.15);
+}
+
+.video-box video {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: 600px;
+}
+
+
+/* =========================================
+   VIDEO RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .video-section {
+        padding: 75px 6%;
+    }
+
+    .video-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .video-text h2 {
+        font-size: 42px;
+    }
+
+}
